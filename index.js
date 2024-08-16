@@ -10,9 +10,12 @@ app.get('/', async(req,res) => {
 app.get('/weather', async(req,res) => {
     console.log("request received");
 
+    const APIkey = process.env.API_KEY;
     const lat = 52.9500;
     const lon = -1.1500;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}`
+
+
 
 });
 
